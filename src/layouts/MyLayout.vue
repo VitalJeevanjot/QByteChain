@@ -14,10 +14,10 @@
         <div class="row justify-center q-pa-sm">
           <div class=""> </div>
           <div class="col-8">
-          <q-search icon="search" color="black"  inverted clearable v-model="model"/>
+          <q-search icon="search" color="black"  inverted clearable v-model="model" placeholder="Unit id"/>
            </div>
           <div class="q-pl-md">
-            <q-btn color="white" size="md" label="Edit" icon="search  "/>
+            <q-btn color="black" size="md" icon="search" @click="getjoint"/>
           </div>
         </div>
       </q-page>
@@ -34,6 +34,13 @@ export default {
     }
   },
   methods: {
+    getjoint: function () {
+      this.$byteballClient.api.getJoint(this.model.trim(), function (err, result) {
+        console.log(err, result)
+      })
+    }
+  },
+  mounted () {
   }
 }
 </script>

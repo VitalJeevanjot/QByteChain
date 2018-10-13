@@ -3,7 +3,7 @@
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
-    plugins: [
+    plugins: ['byteball'
     ],
     css: [
       'app.styl'
