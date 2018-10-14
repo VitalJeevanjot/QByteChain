@@ -1,5 +1,5 @@
 # Quasar App
-A Byteball and quasar based app in active development and the devepment progress can be tracked on `Genievot` blog over Steem.
+A Byteball and quasar based app that returns Unit ID very basic info into Quasar components. in active development and the devepment progress can be tracked on `Genievot` blog over Steem.
 
 ### To use it
 - Download that zip file and extract.
@@ -7,4 +7,3 @@ A Byteball and quasar based app in active development and the devepment progress
 - Run `Quasar dev`
 
 
-> WIP
